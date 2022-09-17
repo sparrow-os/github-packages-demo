@@ -32,7 +32,7 @@
             </repository>
             <repository>
                 <id>github</id>
-                <url>https://maven.pkg.github.com/sparrow-os/REPOSITORY</url>
+                <url>https://maven.pkg.github.com/sparrow-os/$(REPOSITORY)</url>
                 <snapshots>
                     <enabled>true</enabled>
                 </snapshots>
