@@ -21,25 +21,31 @@
     > 5. Select all options you can see
     > 6. Then you can see your new token
 
-2. Add the below code block to your repository `pom.xml` or `settings.xml`
-    ```xml
-    <profile>
-        <id>github</id>
-        <repositories>
-            <repository>
-                <id>central</id>
-                <url>https://repo1.maven.org/maven2</url>
-            </repository>
-            <repository>
-                <id>github</id>
-                <url>https://maven.pkg.github.com/sparrow-os/$(REPOSITORY)</url>
-                <snapshots>
-                    <enabled>true</enabled>
-                </snapshots>
-            </repository>
-        </repositories>
-    </profile>
-    ```
+2. Add the below code block to your repository `pom.xml`   
+    1.  Add   
+           ```xml
+           <repository>xxx</repository>
+           ```
+        to your properties
+     
+    2.  ```xml
+        <profile>
+            <id>github</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo1.maven.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/${repository}</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+        ```
    
 3. ``mvn clean deploy`` should be successful
 4. Finally, you can see the packages in your GitHub repository page as below pic
