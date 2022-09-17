@@ -10,11 +10,11 @@
     </parent>
     <groupId>com.sparrow-zoo</groupId>
     <artifactId>github-packsges-demo</artifactId>
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.0.7-SNAPSHOT</version>
     <name>github-packages-demo</name>
     <description>github-packages-demo</description>
     <properties>
-        <repository>PassByParam</repository>
+        <repository>sparrow/github-packages-demo</repository>
         <java.version>17</java.version>
         <repackage.classifier/>
         <kotlin.version>1.6.21</kotlin.version>
