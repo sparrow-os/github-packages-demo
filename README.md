@@ -1,6 +1,6 @@
 # Upload Maven packages to GitHub guide
 
->**If you don't want to deploy packages in your local environment, please check `.github/workflow/maven-publish.yml` file, GitHub Actions will auto trigger `build` and `deploy` command, and you can skip the below steps.** : )
+>**If you don't want to deploy packages in your local environment, please check `.github/workflow/maven-publish.yml` file, GitHub Actions will auto trigger `build` and `deploy` command, and you can skip the below steps except step 2.** : )
 
 1. Edit your ~/.m2/settings.xml  
     Please add below code block to your settings.xml file
