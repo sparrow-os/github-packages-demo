@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.sparrow-zoo</groupId>
     <artifactId>github-packsges-demo</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>github-packages-demo</name>
     <description>github-packages-demo</description>
     <properties>
