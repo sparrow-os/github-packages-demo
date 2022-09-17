@@ -10,11 +10,11 @@
     </parent>
     <groupId>com.sparrow-zoo</groupId>
     <artifactId>github-packsges-demo</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
     <name>github-packages-demo</name>
     <description>github-packages-demo</description>
     <properties>
-        <project>sparrow-os</project>
+        <repository>PassByParam</repository>
         <java.version>17</java.version>
         <repackage.classifier/>
         <kotlin.version>1.6.21</kotlin.version>
@@ -207,7 +207,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/${project}/${artifactId}</url>
+                    <url>https://maven.pkg.github.com/${repository}</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
@@ -219,7 +219,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/${project}/${artifactId}</url>
+            <url>https://maven.pkg.github.com/${repository}</url>
         </repository>
     </distributionManagement>
 
