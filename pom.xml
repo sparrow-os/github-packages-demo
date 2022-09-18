@@ -207,7 +207,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/${repository}</url>
+                    <url>https://maven.pkg.github.com/sparrow-os/repositories</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>

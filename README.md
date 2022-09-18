@@ -1,7 +1,5 @@
 # Upload Maven packages to GitHub guide
 
->**If you don't want to deploy packages in your local environment, please check `.github/workflow/maven-publish.yml` file, GitHub Actions will auto trigger `build` and `deploy` command, and you can skip the below steps except step 2.** : )
-
 1. Edit your ~/.m2/settings.xml  
     Please add below code block to your settings.xml file
     ```xml
@@ -22,11 +20,10 @@
     > 6. Then you can see your new token
 
 2. Add the below code block to your repository `pom.xml`   
-    1.  Add   
-           ```xml
-           <repository>xxx</repository>
-           ```
-        to your properties
+    1. Add below code block to your properties
+       ```xml
+       <repository>xxx</repository>
+       ```
      
     2.  ```xml
         <profile>
@@ -38,7 +35,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/${repository}</url>
+                    <url>https://maven.pkg.github.com/sparrow-os/repositories</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
